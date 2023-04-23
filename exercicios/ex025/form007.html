@@ -11,9 +11,9 @@
     <form action="cadastro.php" method="post" autocomplete="on">
         <p>
             <label for="iest">Estado</label>
-            <select name="estado" id="iest">
+            <select name="estado" id="iest" required>
 
-                <option value="" selected>--- Escolha---</option>
+                <option  disabled value="" selected>--- Escolha---</option>
                 <optgroup label="Região Sudeste">
                     <option value="SP">São paulo</option>
                     <option value="RJ">Rio de Janeiro</option>
@@ -38,7 +38,7 @@
         </p>
         <p>
             <label for="imsg">Mensagem</label>
-            <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
+            <textarea name="msg" id="imsg" cols="10" rows="5" placeholder="deixe a sua mensagem aqui"></textarea>
         </p>
         <p>
             <input type="submit" value="Enviar">
@@ -47,3 +47,4 @@
     </form>
 </body>
 </html>
+
